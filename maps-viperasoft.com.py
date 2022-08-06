@@ -44,7 +44,7 @@ while True:
 
         # 3 5 7 9 şeklinde ilerliyor
 
-      #  time.sleep(1.5)
+      #  time.sleep(5)
 
         ilk_firma = driver.find_element_by_xpath("/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div[" + str(sayac) + "]/div/a")
 
@@ -53,7 +53,7 @@ while True:
        # ilk_firma.send_keys(Keys.END)
        # ilk_firma.send_keys(Keys.HOME)
 
-        ilk_firma.click()
+        
 
        # WebDriverWait(driver, timeout).until(EC.presence_of_element_located(driver.find_element_by_xpath(
         #   '/html/body/div[3]/div[9]/div[9]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div[" + str(sayac) + "]/div/a').click()))
