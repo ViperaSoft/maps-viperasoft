@@ -2,15 +2,21 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 options = Options()
 options.add_argument("start-maximized")
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+driver = webdriver.Chrome(ChromeDriverManager().install())
+
+
 driver.get("https://www.google.com")
 
 
 username = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "//*[@id='searchboxinput']")))
-
 
 ara = "dişçi near istanbul"
 
