@@ -9,4 +9,4 @@ op.add_argument("--disable-dev-sh-usage")
 op.add_argument('--window-size=1920,1080')
 driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), chrome_options=op)
 driver.get("https://www.google.com/maps")
-input("BİR TUŞA BASINIZ"
+input("BİR TUŞA BASINIZ")
